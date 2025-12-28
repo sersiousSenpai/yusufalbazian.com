@@ -2,98 +2,270 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yusuf Al-Bazian | Personal Injury Attorney</title>
+  <title>Yusuf Al-Bazian | Attorney at Law</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Yusuf Al-Bazian - Plaintiff-side personal injury attorney focused on representing individuals who have been seriously harmed." />
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 740px;
-      margin: 80px auto;
-      padding: 0 22px;
-      line-height: 1.7;
-      color: #111;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: #000;
       background: #fff;
+      padding: 0;
+      margin: 0;
     }
+    
+    .container {
+      max-width: 8.5in;
+      margin: 0 auto;
+      padding: 1in 1.25in;
+    }
+    
+    .header {
+      margin-bottom: 24pt;
+      border-bottom: 1pt solid #000;
+      padding-bottom: 12pt;
+    }
+    
+    .header-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 18pt;
+    }
+    
+    .headshot {
+      width: 1.2in;
+      height: 1.2in;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 0.5pt solid #000;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
     h1 {
-      font-size: 2.3rem;
-      margin-bottom: 0.25em;
-      font-weight: 600;
+      font-size: 16pt;
+      font-weight: bold;
+      margin-bottom: 4pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
     }
-    h2 {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: #555;
-      margin-top: 0;
-      margin-bottom: 2.2em;
+    
+    .subtitle {
+      font-size: 11pt;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 8pt;
     }
+    
+    .contact-info {
+      font-size: 10pt;
+      margin-top: 8pt;
+    }
+    
+    .contact-info a {
+      display: inline-block;
+      color: #000;
+      text-decoration: none;
+      border: 1pt solid #000;
+      padding: 4pt 12pt;
+      background: #fff;
+      transition: background 0.2s;
+    }
+    
+    .contact-info a:hover {
+      background: #f5f5f5;
+    }
+    
+    .content {
+      text-align: justify;
+    }
+    
     p {
-      margin-bottom: 1.4em;
+      margin-bottom: 12pt;
+      text-indent: 0;
+      orphans: 3;
+      widows: 3;
     }
+    
+    .section-title {
+      font-size: 12pt;
+      font-weight: bold;
+      margin-top: 24pt;
+      margin-bottom: 12pt;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
+      border-bottom: 0.5pt solid #000;
+      padding-bottom: 4pt;
+    }
+    
+    .section-title:first-of-type {
+      margin-top: 0;
+    }
+    
+    .practice-areas {
+      list-style: none;
+      margin-bottom: 12pt;
+    }
+    
+    .practice-areas li {
+      margin-bottom: 6pt;
+      padding-left: 12pt;
+      position: relative;
+    }
+    
+    .practice-areas li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+    }
+    
+    .education-item {
+      margin-bottom: 8pt;
+    }
+    
+    .education-item strong {
+      font-weight: bold;
+    }
+    
+    .education-item .institution {
+      font-style: italic;
+    }
+    
     hr {
       border: none;
-      border-top: 1px solid #e5e5e5;
-      margin: 2.8em 0;
+      border-top: 0.5pt solid #000;
+      margin: 18pt 0;
     }
+    
     .footer {
-      font-size: 0.9rem;
-      color: #666;
+      margin-top: 24pt;
+      padding-top: 12pt;
+      border-top: 0.5pt solid #000;
+      font-size: 9pt;
     }
+    
+    .footer p {
+      margin-bottom: 6pt;
+    }
+    
     a {
-      color: #111;
+      color: #000;
       text-decoration: underline;
+    }
+    
+    @media print {
+      body {
+        font-size: 10pt;
+      }
+      .container {
+        padding: 0.75in 1in;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 0.5in;
+      }
+      .header-content {
+        flex-direction: column;
+      }
+      .headshot {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Yusuf Al-Bazian</h1>
-  <h2>Personal Injury Attorney</h2>
+  <div class="container">
+    
+    <header class="header">
+      <div class="header-content">
+        <img src="assets/yusuf-albazian-headshot.jpeg" alt="Yusuf Al-Bazian" class="headshot" />
+        <div class="header-text">
+          <h1>Yusuf Al-Bazian</h1>
+          <p class="subtitle">Attorney at Law</p>
+          <div class="contact-info">
+            <a href="https://popl.co/card/fSOdlNeR/1/s">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  <p>
-    I am a plaintiff-side personal injury attorney focused on representing individuals who have been
-    seriously harmed and are navigating one of the most difficult periods of their lives. My approach
-    to advocacy is deliberate, trial-oriented, and grounded in careful case evaluation. I believe that
-    effective representation begins with listening, credibility, and preparation—not volume.
-  </p>
+    <div class="content">
+      
+      <div class="section-title">About</div>
+      
+      <p>
+        I am a plaintiff-side personal injury attorney. I represent individuals who have been seriously harmed and are navigating one of the most difficult periods of their lives. My approach to advocacy is deliberate, trial-oriented, and grounded in careful case evaluation. I believe that effective representation begins with listening, credibility, and preparation—not volume.
+      </p>
 
-  <p>
-    My legal background spans personal injury, complex civil litigation, and financial wrongdoing.
-    Before becoming an attorney, I worked in personal injury law supporting catastrophic injury cases,
-    where I gained hands-on exposure to client intake, medical records analysis, mediation preparation,
-    and trial support. That early experience shaped how I approach injury cases today: with an emphasis
-    on clarity, organization, and explaining complex facts in terms juries and clients can understand.
-  </p>
+      <p>
+        My practice is built on the principle that good lawyering requires both technical competence and genuine care for clients. I invest time in understanding not just the legal issues, but the human impact of what clients are experiencing. This dual focus—on both the law and the people—guides how I approach each case.
+      </p>
 
-  <p>
-    I later expanded my practice experience into complex litigation, including securities and consumer
-    cases, where I worked on investigation, discovery, and legal research in matters involving corporate
-    misconduct and regulatory violations. That work sharpened my attention to detail and reinforced the
-    importance of building cases that are fact-driven, document-anchored, and resilient under scrutiny.
-  </p>
+      <div class="section-title">Practice Areas</div>
 
-  <p>
-    I earned my Juris Doctor from the University of California College of the Law, San Francisco, where
-    I competed on the Trial Team and developed a strong interest in courtroom advocacy. During law
-    school, I was also involved in leadership and access-to-justice initiatives, reflecting a broader
-    commitment to strengthening the civil justice system and the plaintiff-side bar.
-  </p>
+      <ul class="practice-areas">
+        <li>Personal Injury</li>
+        <li>Catastrophic Injury</li>
+        <li>Automobile Accidents</li>
+        <li>Motorcycle Accidents</li>
+        <li>Truck Accidents</li>
+        <li>Slip and Fall Accidents</li>
+        <li>Wrongful Death</li>
+      </ul>
 
-  <p>
-    I received my undergraduate degree from the University of California, Berkeley, where I studied
-    Rhetoric and French. My academic background informs my practice by emphasizing persuasive reasoning,
-    precision in language, and the ability to communicate effectively with diverse audiences.
-  </p>
+      <div class="section-title">Experience</div>
 
-  <hr />
+      <p>
+        Before becoming an attorney, I worked in personal injury law supporting catastrophic injury cases. During that time, I gained hands-on exposure to client intake, medical records analysis, mediation preparation, and trial support. That early experience shaped how I approach injury cases today: with an emphasis on clarity, organization, and explaining complex facts in terms juries and clients can understand.
+      </p>
 
-  <p class="footer">
-    This website is intended to provide general information about my background and practice. It does not
-    constitute legal advice, and viewing this site does not create an attorney-client relationship.
-  </p>
+      <p>
+        My practice focuses exclusively on personal injury matters, representing individuals who have been harmed through the negligence or wrongdoing of others. I work on investigation, discovery, and legal research to build cases that are fact-driven, document-anchored, and resilient under scrutiny.
+      </p>
 
-  <p class="footer">
-    <a href="mailto:youremail@example.com">Contact</a>
-  </p>
+      <div class="section-title">Education</div>
+
+      <div class="education-item">
+        <p>
+          <strong>J.D.</strong>, University of California College of the Law, San Francisco, 2025
+        </p>
+      </div>
+
+      <div class="education-item">
+        <p>
+          <strong>B.A.</strong>, University of California, Berkeley, 2020
+        </p>
+      </div>
+
+      <div class="section-title">Philosophy</div>
+
+      <p>
+        I practice law because I believe in the importance of the civil justice system and the role it plays in holding wrongdoers accountable. I take cases where I can make a meaningful difference for clients who have been harmed. I do not take every case that comes through the door, and I am transparent with potential clients about the strengths and weaknesses of their matters. This approach allows me to focus my time and resources on cases where I can provide the most value.
+      </p>
+
+    </div>
+
+    <footer class="footer">
+      <p>
+        This website is intended to provide general information about my background and practice. It does not constitute legal advice, and viewing this site does not create an attorney-client relationship.
+      </p>
+    </footer>
+
+  </div>
 
 </body>
 </html>
